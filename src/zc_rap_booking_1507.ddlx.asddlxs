@@ -6,13 +6,13 @@
 annotate view zc_rap_booking_1507 with
 {
 
-  @UI.facet: [ { id:            'Booking',
+  @UI.facet: [ { id:            'BookingDtls',
                  purpose:       #STANDARD,
                  type:          #IDENTIFICATION_REFERENCE,
                  label:         'Booking Details',
                  position:      10 }  ]
 
- @UI: { identification: [ { position: 10, label: 'Booking UUID'  } ] }
+  @UI: { identification: [ { position: 10, label: 'Booking UUID'  } ] }
   BookingUUID;
 
   @UI.hidden: true
@@ -24,32 +24,32 @@ annotate view zc_rap_booking_1507 with
   BookingID;
 
   @UI: { lineItem:       [ { position: 30 } ],
-         identification: [ { position: 30 , label: 'Date of Booking'} ] 
+         identification: [ { position: 30 , label: 'Date of Booking'} ]
          }
   BookingDate;
 
   @UI: { lineItem:       [ { position: 40 } ],
-         identification: [ { position: 40 , label: 'Customers ID'} ] 
+         identification: [ { position: 40 , label: 'Customers ID'} ]
          }
- CustomerID;
+  CustomerID;
 
-  @UI: { lineItem:       [ { position: 50 } ]
-//         identification: [ { position: 50 } ] 
+  @UI: { lineItem:       [ { position: 50 } ],
+         identification: [ { position: 50 } ]
          }
   CarrierID;
 
-  @UI: { lineItem:       [ { position: 60 } ]
-//         identification: [ { position: 60 } ] 
+  @UI: { lineItem:       [ { position: 60 } ],
+         identification: [ { position: 60 } ]
          }
   ConnectionID;
 
-  @UI: { lineItem:       [ { position: 70 } ]
-//         identification: [ { position: 70 } ] 
+  @UI: { lineItem:       [ { position: 70 } ],
+           identification: [ { position: 70 } ]
          }
   FlightDate;
 
-  @UI: { lineItem:       [ { position: 80 } ]
-//           identification: [ { position: 80 } ] 
+  @UI: { lineItem:       [ { position: 80 } ],
+           identification: [ { position: 80 } ]
            }
   FlightPrice;
 
