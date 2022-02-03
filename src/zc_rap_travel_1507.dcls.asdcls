@@ -1,0 +1,11 @@
+@EndUserText.label: 'Access control for the Travel Consumption view'
+@MappingRole: true
+define role ZC_RAP_TRAVEL_1507 {
+    grant
+        select
+            on
+                ZC_RAP_TRAVEL_1507
+                    where
+                        inheriting conditions from entity zi_rap_travel_1507;
+                        
+}
